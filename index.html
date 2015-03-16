@@ -3,13 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ground v3</title>
-<!-- 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css"> -->
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
 		<nav>
-			<ul>
+			<ul class="float-left">
 				<li><a href="">О ГРАУНД</a></li>
 				<br>
 				<li><a href="">выставки</a></li>
@@ -23,78 +22,116 @@
 				<li><a href="">карта сайта</a></li>
 			</ul>
 		</nav>
-		<aside>
-			<img src="images/logo-left.png" alt="">
-			<img src="images/logo-right.png" alt="">
-				<form class="text-right">
-    				<label for="search">поиск</label>
-   				 	<input type="search" class="form-control"  placeholder="">
-    				<label for="subscribe">подписка<br>на новости</label>
-    				<input type="subscribe" class="form-control" placeholder="">
+		<div class="scrolling-ground float-left">
+			<img src="images/ground.png" alt="">
+		</div>
+		<aside class="float-right">
+			<div id="logo-pack">
+				<img src="images/logo-left.png" alt="" id="logo-left">
+				<img src="images/logo-right.png" alt="">
+			</div>
+				<form>
+					<div id="search">    	
+						<label for="search">поиск</label>
+   					 	<div><input type="search" class="form-control"  placeholder=""></div>
+   					 </div>
+					<div id="subscribe">
+					 	<label for="subscribe">подписка<br>на новости</label>
+    					<div><input type="subscribe" class="form-control" placeholder=""></div>
+    				</div>
 	  			</form>
 		</aside>
 		</header>
 <section>
 	<h1>Выставки</h1>
-	<img src="images/slider.jpg" alt="slider"></div>
-	<div><p>Выставка о районе<br>Заземление</p></div>
-	<div><p>26.02.15<br>26.03.15</p></div>
-	<div><p>Выставка о районе<br>Заземление</p></div>
-	<div><p>26.02.15<br>26.03.15</p></div>
+	<img src="images/slider.jpg" alt="slider">
+	<div class="table">
+		<div class="table-cell">
+			<div class="half float-left">
+				<h3>Выставка о районе</h3><p>граунд ходынка</p>
+			</div><!-- end of first half -->
+			<div class="half float-right">
+				<h3>26.02.15<br>26.03.15</h3>
+			</div> <!-- end of second half -->
+		</div><!--  end of cell -->
+		<div class="table-cell">
+			<div class="half float-left">
+				<h3>Выставка о районе<br>Заземление</h3><p>граунд песчаная</p>
+			</div><!-- end of first half -->
+			<div class="half float-right">
+				<h3>26.02.15<br>26.03.15</h3>
+			</div> <!-- end of second half -->
+		</div><!--  end of cell -->
+	</div> <!-- end of table -->
 
-	<div><p>граунд ходынка</p></div>
-	<div><p>граунд песчаная</p></div>
-	<div>
+	
 		<h1>События</h1>
-	</div>
+		<div class="table">
+			<div class="table-cell">
+				<div class="half float-left">
+					<h3>Концерт Бесконечность</h3> <p>Петр Главатских и Гнётов</p><p>граунд ходынка</p>
+				</div><!-- end of first half -->
+				<div class="half float-right">
+					<h3>08.03.15</h3>
+				</div> <!-- end of second half -->
+			</div><!--  end of cell -->
+			<div class="table-cell">
+				<div class="half float-left">
+					<img src="images/feautured-image.jpg" alt="">
+					<h3>Выставка о районе<br>Заземление</h3>
+					<p>граунд песчаная</p>
+				</div><!-- end of first half -->
+				<div class="half float-right">
+					<h3>26.02.15<br>26.03.15</h3>
+				</div> <!-- end of second half -->
+			</div><!--  end of cell -->
+		</div> <!-- end of table -->
+		<h1>Образование</h1>
+		<div class="table">
+			<div class="table-cell">
+				<div class="half float-left">
+					<h3>Глеб Шульпяков<br>Стихи на машинке</h3><p>граунд ходынка</p>
+				</div><!-- end of first half -->
+				<div class="half float-right">
+					<h3>07.03.15</h3>
+				</div> <!-- end of second half -->
+			</div><!--  end of cell -->
+			<div class="table-cell">
+				<div class="half float-left">
+					<h3>Лекция: Послевоенная<br>застройка района<br>Сокол и Октябрьское Поле</h3><p>граунд песчаная</p>
+				</div><!-- end of first half -->
+				<div class="half float-right">
+					<h3>13.03.15</h3>
+				</div> <!-- end of second half -->
+			</div><!--  end of cell -->
+		</div> <!-- end of table -->
 
-		<div>
-			<div><p>Концерт<br>Бесконечность</p><p>Петр Главатских и Гнетов</p></div>
-			<div><p>08.03.15</p></div>
-			<div><img src="images/anounce.jpg" alt=""></div>
-			<div><p>26.02.15<br>26.03.15</p></div>
-		</div>
+		<div class="table">
+			<div class="table-cell">
+				<div class="half float-left">
+					<h3>Лекция: "Два Сокола"<br>Татьяны Царевой</h3><p>граунд ходынка</p>
+				</div><!-- end of first half -->
+				<div class="half float-right">
+					<h3>05.03.15</h3>
+				</div> <!-- end of second half -->
+			</div><!--  end of cell -->
+			<div class="table-cell">
+				<div class="half float-left">
+					<h3></h3><p>граунд песчаная</p>
+				</div><!-- end of first half -->
+				<div class="half float-right">
+					<h3></h3>
+				</div> <!-- end of second half -->
+			</div><!--  end of cell -->
+		</div> <!-- end of table -->
 
-		<div>
-			<div><p>граунд ходынка</p></div>
-			<div><p>граунд песчаная</p></div>
-		</div>
-
-		<div>
-			<div>
-				<h1>Образование</h1>
-			</div>
-		</div>
-		<div>
-			<div><p>Глеб Шульпяков<br>Стихи на машинке</p></div>
-			<div><p>07.03.15</p></div>
-			<div><p>Лекция: Послевоенная<br>застройка района<br>Сокол и Октябрьское Поле</p></div>
-			<div><p>13.03.15</p></div>
-		</div>
-		<div>
-			<div><p>граунд ходынка</p></div>
-			<div><p>граунд песчаная</p></div>
-		</div>
-
-		<div>
-			<div><p></p></div>
-			<div><p></p></div>
-			<div><p>Лекция: "Два Сокола"<br>Татьяны Царевой</p></div>
-			<div><p>05.03.15</p></div>
-		</div>
-		<div>
-			<div><p>граунд ходынка</p></div>
-			<div><p>граунд песчаная</p></div>
-		</div>
 
 		<footer>
-			<div>
-				<div><img src="images/hodinka.png" alt="Ходынка"></div>
-				<div><img src="images/peschanaya.png" alt="Песчаная"></div>
-			</div>
+				<div id="footer-wrap">
+					<div class="float-left"><img src="images/hodinka.png" alt="Ходынка"></div>
+					<div class="float-right"><img src="images/peschanaya.png" alt="Песчаная"></div>
+				</div>
 		</footer>
-
-	</div>
 	
 </section>
 </body>

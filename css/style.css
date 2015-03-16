@@ -1,0 +1,148 @@
+@import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic);
+/*Variables*/
+header {
+  width: 850px;
+  height: 235px;
+  margin: 25px auto 0; }
+
+body {
+  font-family: 'Open Sans',Helvetica,Arial, sans-serif;
+  font-size: 14px;
+  font-color: #1d1d1b; }
+
+a {
+  color: #1d1d1b; }
+
+/*NAV*/
+nav ul {
+  margin: 0;
+  padding: 0; }
+nav li {
+  list-style: none; }
+
+.scrolling-ground {
+  margin-left: 305px; }
+
+#logo-left {
+  margin-right: 55px; }
+
+#logo-pack {
+  margin-bottom: 65px; }
+
+#search {
+  margin-bottom: 15px; }
+  #search input {
+    width: 100%;
+    position: absolute;
+    margin-top: -5px; }
+  #search label {
+    float: left; }
+  #search div {
+    overflow: hidden;
+    padding: 0 5px;
+    position: relative;
+    height: 30px; }
+
+#subscribe input {
+  position: absolute; }
+#subscribe label {
+  float: left; }
+#subscribe div {
+  overflow: hidden;
+  padding: 0 5px;
+  position: relative;
+  height: 50px;
+  padding-top: 14px; }
+
+input {
+  border: 0;
+  border-bottom: 1px solid; }
+
+/*SECTION*/
+section {
+  width: 850px;
+  margin: 0 auto; }
+  section:last-child {
+    margin-bottom: 100px; }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 45px;
+  margin: 0 0 30px 0; }
+
+h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer; }
+
+.table {
+  display: table;
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px; }
+  .table:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid #1d1d1b; }
+
+.table-cell {
+  display: table-cell;
+  width: 50%;
+  border-bottom: 2px solid #1d1d1b; }
+  .table-cell:nth-child(2n) {
+    padding-left: 25px; }
+  .table-cell:nth-child(2n+1) {
+    padding-right: 25px; }
+
+.half {
+  position: relative;
+  width: 70%;
+  height: 250px; }
+  .half img {
+    display: block;
+    z-index: 0; }
+  .half h3 {
+    margin-top: 0px;
+    height: 45px; }
+  .half.float-right {
+    width: 30%;
+    text-align: right; }
+  .half p:last-child {
+    position: absolute;
+    bottom: 0; }
+
+/*animation*/
+.half img {
+  position: absolute;
+  top: 0;
+  display: none; }
+.half:hover img {
+  display: block;
+  z-index: 1; }
+.half:hover p {
+  z-index: 0; }
+
+/*Footer*/
+footer {
+  width: 850px;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  bottom: 0; }
+  footer #footer-wrap {
+    padding-top: 10px; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+/*# sourceMappingURL=style.css.map */
